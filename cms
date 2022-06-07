@@ -1,0 +1,417 @@
+package sayacms;
+import java.io.File;
+
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+import java.util.concurrent.TimeUnit;
+public class cms {
+
+	
+	@SuppressWarnings("unused")
+	public static void main(String[] args)throws InterruptedException
+	{
+		
+	 {
+		 Thread.sleep(1000);
+	  /*	 
+		System.setProperty("webdriver.chrome.driver", "C:\\BrowsersDriver\\chromedriver_win32 (1)\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		Thread.sleep(1000);
+	  	driver.manage().window().setSize(new Dimension(1366,768));
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		Thread.sleep(1000);
+		
+		driver.get("https://webtestinglink.net/SayahHome/sayahome-cms/login");
+		
+		//login with valid Id Pass
+		driver.findElement(By.xpath("//input[@id='inputEmail']")).click();
+		driver.findElement(By.xpath("//input[@id='inputEmail']")).sendKeys("admin");
+		driver.findElement(By.xpath("//input[@id='inputPassword']")).click();
+		driver.findElement(By.xpath("//input[@id='inputPassword']")).sendKeys("zW$Ssg2=");
+		driver.findElement(By.xpath("//button[normalize-space()='Submit']")).submit();
+		Thread.sleep(3000);
+		
+		*/
+		 
+		 
+	/*
+		//object of vedio class
+		 
+		vedio vedioobject = new  vedio();
+		Thread.sleep(2000);
+		vedioobject.AED();
+	*/	
+		
+		
+	/*	
+		
+		//object of career class
+		career careerobject = new career();
+		careerobject.careerAED();
+		
+	*/
+		
+		
+		
+		/*
+		//object of award class
+		//awards awardobject = new awards();
+		//awardobject.awardAED();
+		*/
+		 
+	 
+		
+		//object of csr class
+		csr csrobject = new csr();
+		csrobject.crsAED();
+		
+	
+		 
+		 
+		//object of annual return class
+		//anulretn arobject = new anulretn();
+		//arobject.retnAED();
+		
+		
+		
+		
+		
+		
+		
+	/*
+		//vedio 
+		WebElement menu = driver.findElement(By.xpath("//a[normalize-space()='Video']"));
+		Actions action = new Actions(driver);
+		action.moveToElement(menu).perform();
+		driver.findElement(By.xpath("//a[normalize-space()='Video']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[normalize-space()='Add Video']")).click();
+		Thread.sleep(2000);
+		
+		//addvedio
+		driver.findElement(By.xpath("//input[@id='title']")).click();
+		driver.findElement(By.xpath("//input[@id='title']")).sendKeys("test vedio testng");
+		driver.findElement(By.xpath("//textarea[@id='description']")).click();
+		driver.findElement(By.xpath("//textarea[@id='description']")).sendKeys("testNg is used to pipeline the test integration");
+		driver.findElement(By.xpath("//input[@id='year']")).click();
+		driver.findElement(By.xpath("//input[@id='year']")).sendKeys("2021");
+		driver.findElement(By.xpath("//input[@id='link']")).click();
+		driver.findElement(By.xpath("//input[@id='link']")).sendKeys("https://www.youtube.com/embed/watch?v=lx0SG6sbekM&list=PLeQxh1Kl8PVc3VGNYfpWGWvY0-DJ4J2oK&index=1&t=734s");
+		driver.findElement(By.xpath("//input[@name='submit']")).click();
+		Thread.sleep(1000);
+		
+		//editvedio
+		driver.findElement(By.xpath("//tbody/tr[1]/td[3]/a[1]/span[1]")).click();
+		driver.findElement(By.xpath("//input[@id='title']")).click();
+		driver.findElement(By.xpath("//input[@id='title']")).clear();
+		driver.findElement(By.xpath("//input[@id='title']")).sendKeys(" edit testNg framework");
+		driver.findElement(By.xpath("//textarea[@id='description']")).click();
+		driver.findElement(By.xpath("//textarea[@id='description']")).clear();
+		driver.findElement(By.xpath("//textarea[@id='description']")).sendKeys("edit testNg is used to pipeline the test integration");
+		driver.findElement(By.xpath("//input[@name='submit']")).click();
+		Thread.sleep(2000);
+		
+		//delet vedio
+		driver.findElement(By.xpath("//tbody/tr[1]/td[3]/a[2]/span[1]")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[normalize-space()='Yes']")).click();
+		Thread.sleep(5000); 
+		
+		
+	*/	
+		
+		
+		
+	
+		
+	/*
+	  //career opportunity
+	  
+	  	WebElement menu1 =driver.findElement(By.xpath("//a[normalize-space()='Career Opportunity']"));
+	  	Actions action1 = new Actions(driver);
+	  	action1.moveToElement(menu1).perform();
+	  	driver.findElement(By.xpath("//a[normalize-space()='Career Opportunity']")).click(); 
+	  	Thread.sleep(2000);
+	  
+	  
+	  //addcareer
+	  	driver.findElement(By.xpath("//a[normalize-space()='Add Career Opportunity']")).click(); 
+	  	Thread.sleep(2000);
+	  	driver.findElement(By.xpath("//input[@id='title']")).click();
+	  	driver.findElement(By.xpath("//input[@id='title']")).sendKeys("new test");
+	  	driver.findElement(By.xpath("//input[@id='experience']")).click();
+	  	driver.findElement(By.xpath("//input[@id='experience']")).sendKeys("testtest"); 
+	  	WebElement iframe = driver.findElement(By.tagName("iframe"));
+	  	driver.switchTo().frame(iframe); WebElement tinymce = driver.findElement(By.tagName("body")); tinymce.clear();
+	  	tinymce.sendKeys("Hello, ckeditor!"); driver.switchTo().defaultContent();
+	  	Thread.sleep(2000);
+	  	driver.findElement(By.xpath("//input[@id='experience']")).click();
+	  	driver.findElement(By.xpath("//input[@id='experience']")).sendKeys("second");
+	  	JavascriptExecutor js = (JavascriptExecutor) driver; js.executeScript("window.scrollBy(0,800)", ""); Thread.sleep(1000);
+	  	driver.findElement(By.tagName("div")).click(); 
+	  	Thread.sleep(3000);
+	  	driver.findElement(By.name("submit")).click(); 
+	  	Thread.sleep(3000);
+	  
+	  
+	  
+	  //editcareer
+	  	driver.findElement(By.xpath("//tbody/tr[1]/td[2]/a[1]/span[1]")).click();
+	  	driver.findElement(By.xpath("//input[@id='title']")).click();
+	  	driver.findElement(By.xpath("//input[@id='title']")).clear();
+	  	driver.findElement(By.xpath("//input[@id='title']")).sendKeys("edit test new"); 
+	  	driver.findElement(By.xpath("//input[@id='experience']")).click();
+	  	driver.findElement(By.xpath("//input[@id='experience']")).clear();
+	  	driver.findElement(By.xpath("//input[@id='experience']")).sendKeys("edit test experience"); 
+	  	WebElement iframe1 = driver.findElement(By.tagName("iframe")); 
+	  	driver.switchTo().frame(iframe1);
+	  	WebElement tinymce1 = driver.findElement(By.tagName("body"));
+	  	tinymce1.clear(); tinymce1.sendKeys("edit Hello, ckeditor edit!");
+	  	driver.switchTo().defaultContent(); 
+	  	Thread.sleep(3000); 
+	  	JavascriptExecutor js1 = (JavascriptExecutor) driver; js1.executeScript("window.scrollBy(0,800)", ""); 
+	  	Thread.sleep(1000);
+	  	driver.findElement(By.tagName("div")).click();
+	  	driver.findElement(By.name("submit")).click(); 
+	  	Thread.sleep(4000);
+	  
+	  
+	  //deletcareer
+	  	driver.findElement(By.xpath("//tbody/tr[1]/td[2]/a[2]/span[1]")).click();
+	  	Thread.sleep(1000);
+	  	driver.findElement(By.xpath("//button[normalize-space()='Yes']")).click(); 
+	  	Thread.sleep(5000); 
+	  //Alert alert1 = driver.switchTo().alert();
+	  //alert1.accept(); // driver.quit();
+	 
+		 
+		
+		 
+	*/	 
+		 
+		 
+	/*	 
+		
+		  //going to annual return
+	  	   	WebElement menu11 =driver.findElement(By.xpath("//a[normalize-space()='Annual Returns']"));
+		   	Actions action11 = new Actions(driver);
+		   	action11.moveToElement(menu11).perform(); 
+		   	Thread.sleep(500);
+		   	driver.findElement(By.xpath("//a[normalize-space()='Annual Returns']")).click();
+		  
+		 //add annual return
+		  	driver.findElement(By.xpath("//a[normalize-space()='Add Annual Return']")).click();
+		  	driver.findElement(By.xpath("//input[@id='title']")).click();
+		  	driver.findElement(By.xpath("//input[@id='title']")).sendKeys("test");
+		  	driver.findElement(By.xpath("//input[@id='year']")).click();
+		  	driver.findElement(By.xpath("//select[@aria-label='Select year']")).click();
+		  	Thread.sleep(500);
+		  	Select dropdown = new Select(driver.findElement(By.xpath("//select[@aria-label='Select year']")));
+		  	dropdown.selectByVisibleText("2013"); 
+		  	Thread.sleep(1000);
+		  	driver.findElement(By.xpath("//a[normalize-space()='1']")).click();
+		  	driver.findElement(By.xpath("//button[normalize-space()='Done']")).click();
+		  	Thread.sleep(1000); 
+		  	WebElement chooseFile = driver.findElement(By.xpath("//input[@id='file']"));
+		  	chooseFile.sendKeys("C:\\Users\\user\\Downloads\\dummy-pdf_2.pdf");
+		  	Thread.sleep(1000); 
+		  	driver.findElement(By.name("submit")).click();
+		  	Thread.sleep(5000);
+		 
+		 
+		  
+		/*  
+		 // not working
+		   
+			
+			//edit annual return 
+			driver.findElement(By.xpath("//tr[@class='odd']//span[@class='glyphicon glyphicon-pencil']")).click();
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//input[@id='title']")).click();
+			driver.findElement(By.xpath("//input[@id='title']")).clear();
+			driver.findElement(By.xpath("//input[@id='title']")).sendKeys(" edit test");
+			driver.findElement(By.xpath("//input[@id='year']")).click();
+			driver.findElement(By.xpath("//select[@aria-label='Select year']")).click();
+			Thread.sleep(500); 
+			Select dropdown1 = new Select(driver.findElement(By.xpath("//select[@aria-label='Select year']")));
+			dropdown1.selectByVisibleText("2021"); Thread.sleep(1000);
+			driver.findElement(By.xpath("//a[normalize-space()='1']")).click();
+			driver.findElement(By.xpath("//button[normalize-space()='Done']")).click();
+			Thread.sleep(1000); 
+			WebElement chooseFile1 = driver.findElement(By.xpath("//input[@id='file']"));
+			chooseFile1.sendKeys("C:\\Users\\user\\Downloads\\dummy-pdf_2.pdf");
+			Thread.sleep(1000); 
+			driver.findElement(By.name("submit")).click();
+			Thread.sleep(5000);
+			 
+		 */
+		  	
+		  	
+		 
+		/*	//deleteanual return
+			driver.findElement(By.xpath("//tbody/tr[1]/td[3]/a[2]/span[1]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[normalize-space()='Yes']")).click();//this is delete task button xpath. 
+			Thread.sleep(5000);
+		*/	 
+		 
+		
+			
+			
+		
+		
+		/*
+		
+			//Awards
+		  	WebElement menu12 =driver.findElement(By.xpath("//a[normalize-space()='Awards']"));
+		  	Actions action12 = new Actions(driver);
+		  	action12.moveToElement(menu12).perform(); 
+		  	Thread.sleep(500);
+		  	driver.findElement(By.xpath("//a[normalize-space()='Awards']")).click();
+		   
+		  
+		  	//add awards
+		  	driver.findElement(By.xpath("//a[normalize-space()='Add Awards']")).click();
+		  	Thread.sleep(1000);
+		  	driver.findElement(By.xpath("//input[@id='title']")).click();
+		  	driver.findElement(By.xpath("//input[@id='title']")).sendKeys("add awards ");
+		  	driver.findElement(By.xpath("//input[@id='description']")).click();
+		  	driver.findElement(By.xpath("//input[@id='description']")).sendKeys("add description");
+		  	driver.findElement(By.xpath("//input[@id='year']")).click();
+		  	driver.findElement(By.xpath("//select[@aria-label='Select year']")).click();
+		  	Thread.sleep(500);
+		  	Select dropdown11 = new Select(driver.findElement(By.xpath("//select[@aria-label='Select year']")));
+		  	dropdown11.selectByVisibleText("2013"); 
+		  	Thread.sleep(1000);
+		  	driver.findElement(By.xpath("//a[normalize-space()='1']")).click();
+		  	driver.findElement(By.xpath("//button[normalize-space()='Done']")).click();
+		  	Thread.sleep(1000);  
+		  	
+		  	WebElement browse = driver.findElement(By.xpath("//input[@id='file']"));
+		    //click on ‘Choose file’ to upload the desired file
+		    browse.sendKeys("C:\\Users\\user\\Downloads\\autoimage.jpg"); 
+		    //Uploading the file using sendKeys
+		    System.out.println("File is Uploaded Successfully");
+		  
+		  	Thread.sleep(1000);
+		  	driver.findElement(By.name("submit")).click();
+		  	System.out.println("File is Uploaded Successfully");
+		  	Thread.sleep(5000);
+		  
+		  	//edit award
+		  	driver.findElement(By.xpath("//tr[@class='odd']//span[@class='glyphicon glyphicon-pencil']")).click();
+		  	Thread.sleep(1000);
+		  	driver.findElement(By.xpath("//input[@id='title']")).click();
+		  	driver.findElement(By.xpath("//input[@id='title']")).clear();
+		  	driver.findElement(By.xpath("//input[@id='title']")).sendKeys("Edit awards ");
+		  	driver.findElement(By.xpath("//textarea[@id='description']")).click();
+		  	driver.findElement(By.xpath("//textarea[@id='description']")).clear();
+		  	driver.findElement(By.xpath("//textarea[@id='description']")).sendKeys("edit description");
+		  	driver.findElement(By.xpath("//input[@id='year']")).click();
+		  	driver.findElement(By.xpath("//select[@aria-label='Select year']")).click();
+		  	Thread.sleep(500);
+		  	Select dropdown111 = new Select(driver.findElement(By.xpath("//select[@aria-label='Select year']")));
+		  	dropdown111.selectByVisibleText("2020"); 
+		  	Thread.sleep(1000);
+		  	driver.findElement(By.xpath("//a[normalize-space()='1']")).click();
+		  	driver.findElement(By.xpath("//button[normalize-space()='Done']")).click();
+		  	Thread.sleep(1000);
+		  	WebElement browse1 = driver.findElement(By.xpath("//input[@id='file']"));
+		    browse1.sendKeys("C:\\Users\\user\\Downloads\\download.jpg");
+		  	System.out.println("award image file upload ho gyi hai tension not");
+		  	Thread.sleep(1000);
+		  	JavascriptExecutor js11 = (JavascriptExecutor) driver;
+			js11.executeScript ("window.scrollBy(0,500)", "");
+			  Thread.sleep(1000);
+		  	driver.findElement(By.cssSelector("input[value='Submit']")).click();
+		  	Thread.sleep(5000);
+		  	
+		  	
+		   
+		  	//delet award
+		  	driver.findElement(By.xpath("//tr[@class='odd']//td[contains(text(),'|')]//a[@href='#confirm-modal']//span[@class='glyphicon glyphicon-trash']")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[normalize-space()='Yes']")).click();//this is delete task button xpath. 
+			Thread.sleep(5000);
+			System.out.println("award delet ho gya hai ");
+			Thread.sleep(1000);
+			
+		*/
+		
+		
+		
+		
+			
+		/*	
+			
+		//csr
+			WebElement csr =driver.findElement(By.xpath("//a[normalize-space()='CSR']"));
+		  	Actions action121 = new Actions(driver);
+		  	action121.moveToElement(csr).perform(); 
+		  	Thread.sleep(500);
+		  	driver.findElement(By.xpath("//a[normalize-space()='CSR']")).click();
+		//addcsr
+			driver.findElement(By.xpath("//a[normalize-space()='Add CSR']")).click();
+		  	Thread.sleep(1000);
+		  	driver.findElement(By.xpath("//input[@id='title']")).click();
+		  	driver.findElement(By.xpath("//input[@id='title']")).sendKeys("hello csr");
+		  	driver.findElement(By.xpath("//textarea[@id='description']")).click();
+		  	driver.findElement(By.xpath("//textarea[@id='description']")).sendKeys("csr description");
+			
+		  	WebElement uploadcsrfile = driver.findElement(By.xpath("//input[@id='file']"));
+		    uploadcsrfile.sendKeys("C:\\Users\\user\\Downloads\\autoimage.jpg"); 
+		    System.out.println("csr ki File is Uploaded Successfully");
+		    Thread.sleep(1000);
+		    driver.findElement(By.xpath("//input[@name='submit']")).click();
+		    Thread.sleep(3000);
+		    
+		//edit csr
+		    driver.findElement(By.xpath("(//span[@class='glyphicon glyphicon-pencil'])[1]")).click();
+		    Thread.sleep(1000);
+		    driver.findElement(By.xpath("//input[@id='title']")).click();
+		    driver.findElement(By.xpath("//input[@id='title']")).clear();
+		    driver.findElement(By.xpath("//input[@id='title']")).sendKeys("edi hello csr");
+			driver.findElement(By.xpath("//textarea[@id='description']")).click();
+			driver.findElement(By.xpath("//textarea[@id='description']")).clear();
+			driver.findElement(By.xpath("//textarea[@id='description']")).sendKeys("edit csr description");
+			
+			WebElement uploadcsredit = driver.findElement(By.xpath("//input[@id='file']"));
+		    uploadcsredit.sendKeys("C:\\Users\\user\\Downloads\\download.jpg"); 
+		    System.out.println("edit csr ki File is Uploaded Successfully");
+		    Thread.sleep(1000);
+		    driver.findElement(By.xpath("//input[@name='submit']")).click();
+		    Thread.sleep(1000);
+		    
+		//delete csr
+			driver.findElement(By.xpath("(//span[@class='glyphicon glyphicon-trash'])[1]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[normalize-space()='Yes']")).click();
+			Thread.sleep(2000);
+			System.out.println("csr delet ho gya hai ");
+			Thread.sleep(1000);
+		 
+		 
+		 */
+		 
+		
+		
+				
+	}
+
+
+  }
+
+
+}
